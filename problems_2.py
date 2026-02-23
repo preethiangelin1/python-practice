@@ -10,3 +10,10 @@ def total_marks(student):
     for m in marks:
         total += m
     return total
+
+def completed_tasks_count(tasks):
+    count = 0
+    for task in tasks:
+        if task.get("done") == True:
+            count += 1 
+    return count
