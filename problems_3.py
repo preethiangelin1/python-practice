@@ -19,3 +19,17 @@ def is_anagram(input_1, input_2):
         if output_1[o] != output_2[o]:
             return False
     return True
+
+def invert_dict(input):
+    output = {}
+    for k, v in input.items():
+        output.update({v:k})
+    return output
+    
+def merge_dict(d1,d2):
+    merged_dict = {}
+    for k,v in d1.items():
+        merged_dict[k] = v
+    for k,v in d2.items():
+        merged_dict[k] = v
+    return merged_dict
